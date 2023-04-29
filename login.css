@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #dcccbd;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 50px;
+}
+.logo img{
+    width: 200px;
+    height: auto;
+}
+.home-btn{
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid #051b4a;
+    background-color: #051b4a;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: all .42s;
+}
+.home-btn:hover{
+    background-color: transparent;
+    color: #051b4a;
+    border: 2px solid #051b4a;
+}
+.container{
+    max-width: 3000px;
+    height: 600px;
+    background-color: #83919c;
+    margin-top: 11rem;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.logbox{
+    max-width: 700px;
+    height: 500px;
+    background-color: #7e8042;
+    margin-top: 2.5rem;
+    margin-left: 70rem;
+    padding: 15px;
+    position: relative;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+/* Login CSS */
+.logbox h1{
+    color: #051b4a;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.logbox li{
+    list-style-type: none;
+	text-align: center;
+	padding-bottom: 3%;
+    font-size: 20px;
+}
+.logbox div{
+    list-style-type: none;
+	text-align: center;
+	padding-bottom: 5%;
+    font-size: 15px;
+}
+.submit{
+	background-color: transparent;
+	color: black;
+	border: 1px solid black;
+	width: 50%;
+	font-size: 20px;
+	transition: 0.9s ease;
+	align-items: center;
+}
+.submit:hover {
+	background-color: #F07334;
+	color: black;
+	border: 1px solid black;
+	font-size: 20px;
+    align-items: center;
+}
+.regis{
+	background-color: transparent;
+	color: black;
+	border: 1px solid black;
+	width: 50%;
+	font-size: 20px;
+	transition: 0.9s ease;
+	align-items: center;
+}
+.regis:hover {
+	background-color: #F07334;
+	color: black;
+	border: 1px solid black;
+	font-size: 20px;
+    align-items: center;
+}
+.password, .username {
+    text-align: center;
+    width: 35%
+}
+
+/* Register CSS */
+.regbox{
+    max-width: 700px;
+    height: 500px;
+    background-color: #7e8042;
+    margin-top: 2.5rem;
+    margin-right: 10rem;
+    padding: 15px;
+    position: relative;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.regbox h1{
+    color: #051b4a;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.regbox li{
+    list-style-type: none;
+	text-align: center;
+	padding-bottom: 3%;
+    font-size: 20px;
+}
+.regbox div{
+    list-style-type: none;
+	text-align: center;
+	padding-bottom: 5%;
+    font-size: 15px;
+}
+.submit2{
+	background-color: transparent;
+	color: black;
+	border: 1px solid black;
+	width: 50%;
+	font-size: 20px;
+	transition: 0.9s ease;
+	align-items: center;
+}
+.submit2:hover {
+	background-color: #F07334;
+	color: black;
+	border: 1px solid black;
+	font-size: 20px;
+    align-items: center;
+}
+.regis2{
+	background-color: transparent;
+	color: black;
+	border: 1px solid black;
+	width: 50%;
+	font-size: 20px;
+	transition: 0.9s ease;
+	align-items: center;
+}
+.regis2:hover {
+	background-color: #F07334;
+	color: black;
+	border: 1px solid black;
+	font-size: 20px;
+    align-items: center;
+}
+.password, .username {
+    text-align: center;
+    width: 35%
+}
+
+/* Footer */
+footer h1 {
+    color: #7e8042;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+footer p {
+    color: #051b4a;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.footerlogo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: auto;
+    transition: all .40s;
+    align-items: center;
+}

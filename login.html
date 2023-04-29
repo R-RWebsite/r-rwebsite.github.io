@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-RClothes Login-</title>
+    <link rel="stylesheet" href="login.css">
+
+    <head>
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    </head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo"><img src="images/logo1.png" alt=""></a>
+
+        <a href="index.html" class="home-btn">Shop Now!</a>
+
+    </header>
+
+    <main class="container">
+        <div id="logbox" class="logbox">
+            <h1>
+                Login
+            </h1>
+
+            <form name="login" onsubmit="return validateForm() ;" method="post">
+                <ul>
+                    <li>Username: <input id="LOGuser" class="username" type="text" name="username"></li>
+                    <li>Password: <input id="LOGpass" class="password" type="password" name="password"></li>
+                </ul>
+                
+                <div>
+                    <input type="checkbox" onclick="passVisible()">Show Password
+                </div>
+                
+                <div>
+                    <input type="button" class="submit" value="Log In" name="submit"  onclick="validate()">
+                </div>
+                
+                <div>
+                    <input type="button" class="regis" value="Register" name="regis" onclick="displayLogReg()">
+                </div>
+            </form>
+        </div>
+
+        
+        <div id="regbox" class="regbox" style="display: none;">
+            <h1>
+                Registration
+            </h1>
+
+            <form name="login" onsubmit="return validateForm() ;" method="post">
+                <ul>
+                    <li>Username: <input id="REGuser" class="username" type="text" name="username"></li>
+                    <li>Password: <input id="REGpass" class="password" type="password" name="password"></li>
+                    <li>Email: <input id="REGmail" class="email" type="email" name="RGemail"></li>
+                </ul>
+                
+                <div>
+                    <input type="checkbox" onclick="passVisible()">Show Password
+                </div>
+                
+                <div>
+                    <input type="button" class="regis" value="Register" name="regis2" onclick="register()">
+                </div>
+                
+                <div>
+                    <input type="button" class="submit" value="Log In" name="submit2" onclick="displayRegLog()">
+                </div>
+            </form>
+        </div>
+        
+    </main>
+
+    <footer>
+        <h1>Your clothes, our clothes, we clothes!</h1>
+        <p>a brand founded on friendship, <br> we would like to 
+        change the world with our clothes - <span> shop till you drop bestie!</span></p>
+        
+        <div class="footerlogo">
+            <img src="images/logo1.png" alt="">
+        </div>
+
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
