@@ -24,6 +24,23 @@ header{
     width: 200px;
     height: auto;
 }
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: #051b4a;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 4px 5px;
+    margin: 0 22px;
+    border-bottom: 2px solid transparent;
+    transition: all .42s;   
+}
+.navlist a:hover{
+    color: #051b4a;
+    border-bottom: 2px solid #fff;
+}
 .home-btn{
     display: inline-block;
     color: #fff;
@@ -48,14 +65,12 @@ header{
     box-sizing: border-box;
 }
 .logbox{
-    max-width: 700px;
-    height: 500px;
+    max-width: 900px;
     background-color: #7e8042;
-    margin-top: 2.5rem;
-    margin-left: 70rem;
+    margin: auto;
+    margin-top: 3rem;
     padding: 15px;
-    position: relative;
-    border-radius: 30px;
+    border-radius: 20px;
     box-sizing: border-box;
 }
 

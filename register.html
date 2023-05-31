@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-RClothes Register-</title>
+    <link rel="stylesheet" href="register.css">
+
+    <head>
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    </head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/logo1.png" alt=""></a>
+
+        <ul class="navlist">
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+
+        <a href="index.html" class="home-btn">Shop Now!</a>
+    </header>
+
+    <main class="container">
+        <div class="regbox" id="RegisterForm">
+            <h1>
+                Registration
+            </h1>
+
+            <form name="register">
+                <ul>
+                    <li>Username: <input id="REGuser" type="text" placeholder="Username"></li>
+                    <li>Password: <input id="REGpass" type="password" placeholder="Password"></li>
+                    <li>Email: <input id="REGmail" type="email" placeholder="Email"></li>
+                </ul>
+
+                <div class="submit-button">
+                    <button class="regis" value="Register" id="add">Register</button>
+                </div>
+            </form>
+            
+            <div>
+                <input type="button" class="submit" value="Log In" id="submit" onclick="displayLogin()">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h1>Your clothes, our clothes, we clothes!</h1>
+        <p>a brand founded on friendship, <br> we would like to 
+        change the world with our clothes - <span> shop till you drop bestie!</span></p>
+        
+        <div class="footerlogo">
+            <img src="images/logo1.png" alt="">
+        </div>
+
+    </footer>
+
+    <script src="loginreg.js"></script>
+</body>
+</html>

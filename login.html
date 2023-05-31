@@ -17,8 +17,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;800&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -26,8 +26,12 @@
     <header>
         <a href="#" class="logo"><img src="images/logo1.png" alt=""></a>
 
-        <a href="index.html" class="home-btn">Shop Now!</a>
+        <ul class="navlist">
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
 
+        <a href="index.html" class="home-btn">Shop Now!</a>
     </header>
 
     <main class="container">
@@ -36,53 +40,21 @@
                 Login
             </h1>
 
-            <form name="login" onsubmit="return validateForm() ;" method="post">
+            <form name="login">
                 <ul>
-                    <li>Username: <input id="LOGuser" class="username" type="text" name="username"></li>
-                    <li>Password: <input id="LOGpass" class="password" type="password" name="password"></li>
+                    <li>Username: <input id="LOGuser" type="text" placeholder="Username"></li>
+                    <li>Password: <input id="LOGpass" type="password" placeholder="Password"></li>
                 </ul>
-                
-                <div>
-                    <input type="checkbox" onclick="passVisible()">Show Password
+    
+                <div class="login-button">
+                    <button class="submit" value="Log In" id="userlogin">Log in</button>
                 </div>
                 
                 <div>
-                    <input type="button" class="submit" value="Log In" name="submit"  onclick="validate()">
-                </div>
-                
-                <div>
-                    <input type="button" class="regis" value="Register" name="regis" onclick="displayLogReg()">
+                    <input type="button" class="regis" value="Register" name="regis" onclick="displayRegister()">
                 </div>
             </form>
-        </div>
-
-        
-        <div id="regbox" class="regbox" style="display: none;">
-            <h1>
-                Registration
-            </h1>
-
-            <form name="login" onsubmit="return validateForm() ;" method="post">
-                <ul>
-                    <li>Username: <input id="REGuser" class="username" type="text" name="username"></li>
-                    <li>Password: <input id="REGpass" class="password" type="password" name="password"></li>
-                    <li>Email: <input id="REGmail" class="email" type="email" name="RGemail"></li>
-                </ul>
-                
-                <div>
-                    <input type="checkbox" onclick="passVisible()">Show Password
-                </div>
-                
-                <div>
-                    <input type="button" class="regis" value="Register" name="regis2" onclick="register()">
-                </div>
-                
-                <div>
-                    <input type="button" class="submit" value="Log In" name="submit2" onclick="displayRegLog()">
-                </div>
-            </form>
-        </div>
-        
+        </div>      
     </main>
 
     <footer>
@@ -96,6 +68,6 @@
 
     </footer>
 
-    <script src="login.js"></script>
+    <script src="loginreg.js"></script>
 </body>
 </html>
