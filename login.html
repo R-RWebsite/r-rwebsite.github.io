@@ -23,8 +23,9 @@
 </head>
 <body>
     
+    <!-- Header -->
     <header>
-        <a href="#" class="logo"><img src="images/logo1.png" alt=""></a>
+        <a href="index.html" class="logo"><img src="images/logo1.png" alt=""></a>
 
         <ul class="navlist">
             <li><a href="login.html">Log In</a></li>
@@ -34,29 +35,43 @@
         <a href="index.html" class="home-btn">Shop Now!</a>
     </header>
 
+    <!-- Login Form -->
     <main class="container">
-        <div id="logbox" class="logbox">
-            <h1>
-                Login
-            </h1>
+        <div class="box">
+            <form id='loginForm' name="login">
+                <h1>
+                    Login
+                </h1>
+                <p>================================</p>
+                <span></span>
+                <p>================================</p>
 
-            <form name="login">
-                <ul>
-                    <li>Username: <input id="LOGuser" type="text" placeholder="Username"></li>
-                    <li>Password: <input id="LOGpass" type="password" placeholder="Password"></li>
-                </ul>
+                <div class="input">
+                    <li>Username: <input id="username" type="text" placeholder="Username"></li>
+                    <small id="userError"></small>
+                </div>
+
+                <div class="input">
+                    <li>Email: <input id="email" type="text" placeholder="Email"></li>
+                    <small id="emailError"></small>
+                </div>
+
+                <div class="input">
+                    <li>Password: <input id="password" type="password" placeholder="Password"></li>
+                    <small id="passError"></small>
+                </div>
     
-                <div class="login-button">
+                <div class="button">
                     <button class="submit" value="Log In" id="userlogin">Log in</button>
+                    <p>*================================*</p>
+                    <p class="no-account">New here? Create an account! <a href="register.html" class="register">Register</a>
                 </div>
                 
-                <div>
-                    <input type="button" class="regis" value="Register" name="regis" onclick="displayRegister()">
-                </div>
             </form>
         </div>      
     </main>
 
+    <!-- Footer -->
     <footer>
         <h1>Your clothes, our clothes, we clothes!</h1>
         <p>a brand founded on friendship, <br> we would like to 
@@ -65,9 +80,9 @@
         <div class="footerlogo">
             <img src="images/logo1.png" alt="">
         </div>
-
     </footer>
 
     <script src="loginreg.js"></script>
+    
 </body>
 </html>

@@ -166,6 +166,21 @@ section{
     color: #fff;
 }
 
+/* Shows Member Name */
+.right #member_name {
+    color: #fff;
+    background-color: #051b4a;
+    margin: 0 15px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: all .42s; 
+}
+.right #member_name:hover {
+    color: #051b4a;
+    background-color: #fff;
+}
+
 /* Responsive navigation bar */
 @media(max-width:995px){
     header{

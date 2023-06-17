@@ -22,8 +22,10 @@
 
 </head>
 <body>
+    
+    <!-- Header -->
     <header>
-        <a href="#" class="logo"><img src="images/logo1.png" alt=""></a>
+        <a href="index.html" class="logo"><img src="images/logo1.png" alt=""></a>
 
         <ul class="navlist">
             <li><a href="login.html">Log In</a></li>
@@ -33,30 +35,53 @@
         <a href="index.html" class="home-btn">Shop Now!</a>
     </header>
 
+    <!-- Register Form -->
     <main class="container">
-        <div class="regbox" id="RegisterForm">
-            <h1>
-                Registration
-            </h1>
+        <div class="box">
+            <form id='registerForm' name="register">
+                <h1>
+                    Register
+                </h1>
+                <p>================================</p>
+                <span></span>
+                <p>================================</p>
 
-            <form name="register">
-                <ul>
-                    <li>Username: <input id="REGuser" type="text" placeholder="Username"></li>
-                    <li>Password: <input id="REGpass" type="password" placeholder="Password"></li>
-                    <li>Email: <input id="REGmail" type="email" placeholder="Email"></li>
-                </ul>
-
-                <div class="submit-button">
-                    <button class="regis" value="Register" id="add">Register</button>
+                <div class="input">
+                    <li>Firstname: <input id="firstname" type="text" placeholder="Firstname"></li>
+                    <small id="firstError"></small>
                 </div>
+
+                <div class="input">
+                    <li>Lastname: <input id="lastname" type="text" placeholder="Lastname"></li>
+                    <small id="lastError"></small>
+                </div>
+
+                <div class="input">
+                    <li>Username: <input id="username" type="text" placeholder="Username"></li>
+                    <small id="userError"></small>
+                </div>
+
+                <div class="input">
+                    <li>Email: <input id="email" type="text" placeholder="Email"></li>
+                    <small id="emailError"></small>
+                </div>
+
+                <div class="input">
+                    <li>Password: <input id="password" type="password" placeholder="Password"></li>
+                    <small id="passError"></small>
+                </div>
+    
+                <div class="button">
+                    <button type='submit' class="submit" value="Register">Register</button>
+                    <p>*================================*</p>
+                    <p class="have-account">Already have an account? <a href="login.html" class="login">Log In</a>
+                </div>
+                
             </form>
-            
-            <div>
-                <input type="button" class="submit" value="Log In" id="submit" onclick="displayLogin()">
-            </div>
-        </div>
+        </div>      
     </main>
 
+    <!-- Footer -->
     <footer>
         <h1>Your clothes, our clothes, we clothes!</h1>
         <p>a brand founded on friendship, <br> we would like to 
@@ -65,9 +90,9 @@
         <div class="footerlogo">
             <img src="images/logo1.png" alt="">
         </div>
-
     </footer>
 
     <script src="loginreg.js"></script>
+    
 </body>
 </html>

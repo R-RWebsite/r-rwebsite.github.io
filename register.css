@@ -56,81 +56,85 @@ header{
     color: #051b4a;
     border: 2px solid #051b4a;
 }
+
+/* Register */
 .container{
     max-width: 3000px;
-    height: 600px;
+    height: 780px;
     background-color: #83919c;
     margin-top: 11rem;
     padding: 15px;
     box-sizing: border-box;
 }
-
-/* Register CSS */
-.regbox{
+.box {
     max-width: 900px;
+    height: 650px;
     background-color: #7e8042;
     margin: auto;
     margin-top: 3rem;
     padding: 15px;
     border-radius: 20px;
     box-sizing: border-box;
+    text-align: center;
 }
-
-.regbox h1{
+.box h1 {
     color: #051b4a;
     font-size: 28px;
     text-transform: capitalize;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
-.regbox li{
+.input {
     list-style-type: none;
 	text-align: center;
-	padding-bottom: 3%;
+    padding-top: 5px;
+	padding-bottom: 15px;
     font-size: 20px;
 }
-.regbox div{
-    list-style-type: none;
-	text-align: center;
-	padding-bottom: 5%;
-    font-size: 15px;
+input {
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
 }
-.submit{
-	background-color: transparent;
+.submit {
+    background-color: transparent;
 	color: black;
 	border: 1px solid black;
 	width: 50%;
 	font-size: 20px;
 	transition: 0.9s ease;
 	align-items: center;
+    border-radius: 10px;
 }
 .submit:hover {
-	background-color: #F07334;
+    background-color: #83919c;
 	color: black;
 	border: 1px solid black;
 	font-size: 20px;
     align-items: center;
 }
-.regis{
-	background-color: transparent;
-	color: black;
-	border: 1px solid black;
-	width: 50%;
-	font-size: 20px;
-	transition: 0.9s ease;
-	align-items: center;
-}
-.regis:hover {
-	background-color: #F07334;
-	color: black;
-	border: 1px solid black;
-	font-size: 20px;
-    align-items: center;
-}
-.password, .username {
+.error {
+    color: rgb(172, 13, 13);
+    font-size: 15px;
+    display: block;
     text-align: center;
-    width: 35%
+}
+.error-message {
+    background-color: rgb(172, 13, 13);
+    font-size: 12px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+.success-message {
+    background-color: rgb(11, 167, 11);
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
 }
 
 /* Footer */
