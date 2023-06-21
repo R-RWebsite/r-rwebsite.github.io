@@ -73,19 +73,7 @@ header{
     color: #051b4a;
     border: 2px solid #051b4a;
 }
-.login-btn{
-    display: inline-block;
-    color: #fff;
-    text-transform: uppercase;
-    background-color: #7e8042;
-    padding: 10px 25px;
-    border-radius: 30px;
-    transition: all .42s;
-}
-.login-btn:hover{
-    background-color: transparent;
-    color: #051b4a;
-}
+
 section{
     padding: 0 10%;
 }

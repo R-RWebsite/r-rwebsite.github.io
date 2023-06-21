@@ -18,9 +18,6 @@ const emailError = document.getElementById('emailError');
 const passwordError = document.getElementById('passError');
 const message = document.querySelector('span');
 
-// button
-const logoutBtn = document.getElementById('logout');
- 
 //member name
 const member_name = document.getElementById('member_name');
 
@@ -154,7 +151,7 @@ if (registerForm) {
         message.classList.remove('error-message');
         message.classList.add('success-message');
         window.alert("Created an account! Click here to continue");
-        location.href = 'member.html';
+        location.href = 'login.html';
   
         for (let i = 0; i < input.length; i++) {
           input[i].value = '';
